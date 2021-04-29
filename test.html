@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="ocScreencapVideo" autoplay="autoplay" muted="" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
+        <source src="https://ir.stonybrook.edu/xmlui/bitstream/handle/11401/9656/rickroll.mp4?sequence=1"
+                type="video/mp4">
+          Your browser does not support MP4 Format videos or HTML5 Video.
+      </video>
+      <script type="text/javascript">
+        var autoPlayVideo = document.getElementById("ocScreencapVideo");
+        autoPlayVideo.oncanplaythrough = function() {
+            autoPlayVideo.muted = !autoPlayVideo.muted;
+            autoPlayVideo.play();
+            autoPlayVideo.pause();
+            autoPlayVideo.play();
+        }
+    </script>
+</body>
+</html>
